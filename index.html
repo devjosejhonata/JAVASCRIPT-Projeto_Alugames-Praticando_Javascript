@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto AluGames - Jose Jhonata</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <!-- Corpo da página com a classe 'body' para estilização -->
+
+    <main class="container main">
+        <!-- Elemento principal da página, encapsulando o conteúdo principal -->
+
+        <img src="img/logo.svg" alt="Logo AluGames">
+        <!-- Logo da AluGames exibida no topo do conteúdo -->
+
+        <section class="divisor">
+            <!-- Seção de divisor visual com uma linha e uma barra decorativa -->
+
+            <div class="divisor__line"></div>
+            <!-- Linha horizontal decorativa -->
+
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <!-- Barra visual adicional para estética -->
+
+            <div class="divisor__line"></div>
+            <!-- Segunda linha horizontal decorativa -->
+        </section>
+
+        <h1 class="page-title">
+            <!-- Título principal da página --> 
+            <!-- Parte do título destacada com ênfase -->
+            Aluguel de <span class="page-title__emphasis">boardgames</span>
+        </h1>
+
+        <section class="dashboard">
+            <!-- Seção da lista de jogos disponíveis para aluguel -->
+
+            <ul class="dashboard__items">
+                <!-- Lista não ordenada de itens de jogos -->
+
+                <li class="dashboard__items__item" id="game-1">
+                    <!-- Item de jogo individual com identificador único -->
+
+                    <div class="dashboard__item__img">
+                        <!-- Contêiner para a imagem do jogo -->
+
+                        <img src="img/monopoly.png" alt="Capa jogo Monopoly">
+                        <!-- Imagem da capa do jogo Monopoly -->
+                    </div>
+
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <!-- Nome do jogo exibido abaixo da imagem -->
+
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                    <!-- Botão para alugar o jogo, acionando a função alterarStatus com o ID 1 -->
+                </li>
+
+                <li class="dashboard__items__item" id="game-2">
+                    <!-- Segundo item de jogo na lista -->
+
+                    <div class="dashboard__item__img">
+                        <!-- Contêiner para a imagem do jogo -->
+
+                        <img src="img/ticket_to_ride.png" alt="Capa jogo Ticket to Ride">
+                        <!-- Imagem da capa do jogo Ticket to Ride -->
+                    </div>
+
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <!-- Nome do jogo exibido abaixo da imagem -->
+
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                    <!-- Botão para alugar o jogo, acionando a função alterarStatus com o ID 2 -->
+                </li>
+
+                <li class="dashboard__items__item" id="game-3">
+                    <!-- Terceiro item de jogo, já marcado como alugado -->
+
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <!-- Contêiner para a imagem do jogo com classe adicional indicando que está alugado -->
+
+                        <img src="img/takenoko.png" alt="Capa jogo Takenoko">
+                        <!-- Imagem da capa do jogo Takenoko -->
+                    </div>
+
+                    <p class="dashboard__item__name">Takenoko</p>
+                    <!-- Nome do jogo exibido abaixo da imagem -->
+                     
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                    <!-- Botão para devolver o jogo, acionando a função alterarStatus com o ID 3 -->
+                </li>
+
+            </ul>
+        </section>
+
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+        <!-- Imagem decorativa de hachuras para enfeitar a interface -->
+
+    </main>
+
+    <script src="js/app.js"></script>
+    <!-- js do projeto -->
+</body>
+
+</html>
